@@ -1,0 +1,21 @@
+//Demonstrates the use of the static modifier
+public class CountInstances
+{
+    //creates several slogan objects and prints num objects created
+    public static void main(String[] args)
+    {
+        Slogan ojb;
+        ojb = new Slogan ("Remember the Alamo.");
+        System.out.println(ojb);
+        ojb = new Slogan ("Don't Worry. Be Happy.");
+        System.out.println(ojb);
+        ojb = new Slogan ("Live Free or Die.");
+        System.out.println(ojb);
+        ojb = new Slogan ("Talk is cheap.");
+        System.out.println(ojb);
+        ojb = new Slogan ("Write Once, Run Anywhere.");
+        System.out.println(ojb);
+        System.out.println();
+        System.out.println("Slogans created: " + Slogan.getCount());
+    }//end main method
+}//end CountInstances class
