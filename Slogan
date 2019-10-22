@@ -1,0 +1,22 @@
+//represents a single slogan string
+public class Slogan
+{
+    private String phrase;
+    private static int count = 0;
+    //sets up slogan and counts the num instances created
+    public Slogan(String str)
+    {
+        phrase = str;
+        count++;
+    }//end slogan constructor
+    //returns this slogan as a string
+    public String toString()
+    {
+        return phrase;
+    }//end toString
+    //returns num instances
+    public static int getCount()
+    {
+        return count;
+    }//end getCount
+}//end class Slogan
